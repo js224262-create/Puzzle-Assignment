@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid and Flexbox Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        
+        <!-- Section 1: Identification -->
+        <header class="grid-section header">
+            <h1>June Sullivan</h1>
+            <h2>Selected Puzzle: Butterflies</h2>
+        </header>
+
+        <!-- Section 2: Flexbox Puzzle Area -->
+        <main class="grid-section puzzle-area">
+            <div class="flex-puzzle-container">
+                <!-- Replace these src paths with your actual image filenames -->
+                <img src="images/piece1.jpg" alt="Puzzle Piece 1" class="puzzle-piece">
+                <img src="images/piece2.jpg" alt="Puzzle Piece 2" class="puzzle-piece">
+                <img src="images/piece3.jpg" alt="Puzzle Piece 3" class="puzzle-piece">
+                <img src="images/piece4.jpg" alt="Puzzle Piece 4" class="puzzle-piece">
+                
+                <!-- The faulty puzzle piece that must be hidden -->
+                <img src="images/faulty_piece.jpg" alt="Wrong Piece" class="faulty-piece">
+            </div>
+        </main>
+
+        <!-- Section 3: Date -->
+        <footer class="grid-section footer">
+            <p>Assignment Completed: May 21, 2026</p>
+        </footer >
+
+    </div>
+
+</body>
+</html>

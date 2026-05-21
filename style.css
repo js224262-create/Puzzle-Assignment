@@ -1,0 +1,59 @@
+/* Reset basic margins */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- PART 1: CSS GRID LAYOUT --- */
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Creates 3 distinct sections vertically */
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.grid-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --- PART 2: FLEXBOX PUZZLE --- */
+.puzzle-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-puzzle-container {
+    display: flex;
+    flex-wrap: wrap;       /* Allows pieces to wrap into rows/columns */
+    width: 600px;          /* Adjust width based on your puzzle's total size */
+    border: 2px dashed #333;
+}
+
+.puzzle-piece {
+    /* Adjust these width/height values depending on how many pieces are in your zip file */
+    width: 50%;            
+    height: auto;
+    object-fit: cover;
+}
+
+/* Requirement: Hide the faulty piece using display property */
+.faulty-piece {
+    display: none;
+}
